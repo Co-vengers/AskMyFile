@@ -100,4 +100,4 @@ _No license. This project is not licensed for public or commercial use._
 
 ## Credits
 
-- Built with ❤️ using Streamlit and
+- Built with ❤️ using Streamlit and Together.ai API key
