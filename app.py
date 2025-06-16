@@ -4,8 +4,6 @@ import pandas as pd
 import base64
 from docx import Document
 from together import Together
-from dotenv import load_dotenv
-import os
 import fitz
 import io
 
