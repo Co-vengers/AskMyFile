@@ -94,7 +94,7 @@ streamlit run src/app.py
 
 ## License
 
-MIT License
+_No license. This project is not licensed for public or commercial use._
 
 ---
 
