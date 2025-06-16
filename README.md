@@ -34,11 +34,21 @@ pip install -r requirements.txt
 
 ### 3. Add your Together.ai API key
 
-Create a `.env` file in the project root:
+Add your API key to Streamlit's secrets file:
 
-```
-TOGETHER_API_KEY=your_together_api_key_here
-```
+1. Open (or create) `.streamlit/secrets.toml` in your project root.
+2. Add the following:
+
+    ```toml
+    [togetherai]
+    api_key = "your_together_api_key_here"
+    ```
+
+Your app can then access the key with:
+
+```python
+import streamlit as st
+api_key
 
 ### 4. Add your logo
 
