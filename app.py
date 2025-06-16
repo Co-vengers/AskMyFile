@@ -60,8 +60,8 @@ def file_handler(upload_file):
         return ""
 
 def generate_response(chat_history, file_data, query):
-    load_dotenv()
-    client = Together(api_key="566c1ecd7169d2bdf5fcb9d71fe63148cb81deeec96fc7bd9e9ff4d4f9106d6d")
+    api_key = st.secrets["together"]["api_key"]
+    client = Together(api_key=api_key)
     messages = [
         {"role": "assistant", "content": "You are a helpful assistant. Use the file content to answer questions."},
         {"role": "user", "content": f"The following file content should be used as context:\n{file_data}"}
